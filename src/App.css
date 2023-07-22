@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.App header {
+  background-color:rgb(66, 133, 244);
+  height: 8vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  max-width: 728px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 5px 15px;
+  box-sizing: border-box;
+}
+
+.App header p{
+  font-size: 1.5rem;
+  font-family: Ubuntu;
+  font-weight: bold;
+  margin:0;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: ghostwhite;
+}
+
+main {
+  padding: 15px;
+  height: 80vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #3333;
+  border-radius: 5px;
+}
+
+form {
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 2px 5px 10px #333;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sendButton{
+  border: none;  
+  background: none;
+  text-align: center;
+  text-decoration: none; 
+  cursor: pointer;
+}
+.sendButtonIcon{
+  color: lightgrey; 
+  font-size: 25px;
+}
+
+.sendButtonIcon:hover{
+  color: rgb(95, 95, 255);
+}
+
+
+input {
+  width: 80%;
+  font-size: 1rem;
+  font-family: Poppins;
+  background: buttonface;
+  color: #333;
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.sign-in {
+  margin: 0 auto;
+}
+
+.sign-out{
+  background-color: ghostwhite;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding: 5px 8px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.8rem;
+  box-shadow: 1px 2px 5px #3333;
+}
+
+.sign-out:hover{
+  background-color: #e5e5ea;
+}
+
+
+
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+.textMessage{
+  max-width: 500px;
+  margin: 10px 8px;
+  line-height: 24px;
+  font-family: Nunito;
+  padding: 5px 16px;
+  word-wrap:break-word;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: dodgerblue;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
