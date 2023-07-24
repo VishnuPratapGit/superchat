@@ -78,9 +78,15 @@ function Chatroom() {
       photoURL,
     });
     setFormValue("");
-    dummy.current.scrollIntoView({ behavior: "smooth" });
+    // dummy.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  useEffect(() => {
+    if (messages && messages.length > 0) {
+      dummy.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
+  
   return (
     <>
       <main>
